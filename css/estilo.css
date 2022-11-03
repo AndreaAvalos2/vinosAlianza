@@ -6,14 +6,12 @@
     --gris: #757575;
     --grisazulado: #dfe9f3;
 
-    /* --tipo--letra:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-
 }
 
 html {
     font-size: 62.5%;
     box-sizing: border-box;
-    /* box model */
+ 
 }
 
 *,
@@ -24,9 +22,8 @@ html {
 
 body {
     font-size: 16px;
-    /* 1 REM */
-    /* font-family: var(--tipo--letra)  */
-    font-family: 'Krub', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    
     background-image: linear-gradient(to top, var(--grisazulado)0%, var(--blanco)100%);
 }
 
@@ -80,12 +77,6 @@ img {
     grid-area: Logo;
 }
 
-/* .navegacion{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-} */
 
 .buscar {
     display: flex;
@@ -111,29 +102,7 @@ img {
 
 }
 
-/* .btn{
-    width: 5.5rem;
-    height: 5.5rem;
-    background-color: var(--blanco);
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    position: absolute;
-    top: 0;
-    right: 0; 
-
-    border-radius: 50%;
-    cursor: pointer;
-} */
-
-/* .buscar:hover input{
-    width: 30rem;
-}
-.buscar input:focus{
-    width: 30rem;
-} */
 
 /* Nvegacion principal */
 .navegacion-principal
@@ -168,38 +137,10 @@ img {
     padding-bottom: .4rem;
 }
 
-/* Prueba hamburguesa */
-
-/* .nav-input,.nav-lavel{
-display: none;
-}
-
-@media (max-width:768px){
-    .nav-lavel{
-        display: block;
-        
-        cursor: pointer;
-    }
-
-    .main-menu
-    {
-        display: none;
-    }
-    .nav-input:checked  +.main-menu{
-position: fixed;
-top: 10rem;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-width: auto;
-background-color: var(--primario);
-    }
-} */
 
 
 
-.a .navegacion-principal {
+.a .navegacion-principal  {
     display: none;
 }
 
@@ -223,11 +164,35 @@ background-color: var(--primario);
     color: var(--blanco);
     font-weight: bold;
     cursor: pointer;
+    font-size: 15px;
 }
 
 .pedidos .icono,
 .carrito .icono {
     cursor: pointer;
+}
+
+.contenido .Productos .ContenedorImg
+{
+    position: relative;
+    z-index:  2;
+}
+
+
+.Productos .oferta
+{
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    border-radius: none;
+    color: white;
+    background-color: var(--rojo);
+    text-decoration: none;
+    font-weight: bold;
+    width: 100px;
+    height: 44px;
+    text-align: center;
+
 }
 
 
@@ -310,11 +275,11 @@ background-color: var(--primario);
     }
 }
 
-.bebida {
+/*.Productos {
     border: .1rem solid;
     border-color: gray;
     width: 100%;
-}
+}*/
 
 .tache {
     text-decoration: line-through;
@@ -333,7 +298,7 @@ background-color: var(--primario);
     margin-top: 2rem;
     font-size: 1.5rem;
     text-decoration: none;
-    text-transform: uppercase;
+  
     font-weight: bold;
     border-radius: 1rem;
     width: 30%;
